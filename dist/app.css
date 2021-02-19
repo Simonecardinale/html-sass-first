@@ -10,20 +10,37 @@ section {
   float: left;
   border: 2px solid red;
   color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
   width: 100%;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 header, footer {
   background-color: orange;
   width: 100%;
   height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clearfix {
-  content: "";
-  clear: both;
-  display: table;
+.card {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  margin: 10px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
